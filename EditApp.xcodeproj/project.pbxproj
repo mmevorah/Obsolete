@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED037C4715B5C822009F1867 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4615B5C822009F1867 /* Product.m */; };
+		ED037C4815B5C822009F1867 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4615B5C822009F1867 /* Product.m */; };
+		ED037C4C15B5C822009F1867 /* Variation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4B15B5C822009F1867 /* Variation.m */; };
+		ED037C4D15B5C822009F1867 /* Variation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4B15B5C822009F1867 /* Variation.m */; };
 		ED3A64B215B47D1A00E6EA04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B115B47D1A00E6EA04 /* UIKit.framework */; };
 		ED3A64B415B47D1A00E6EA04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B315B47D1A00E6EA04 /* Foundation.framework */; };
 		ED3A64B615B47D1A00E6EA04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B515B47D1A00E6EA04 /* CoreGraphics.framework */; };
@@ -16,14 +20,21 @@
 		ED3A64C415B47D1A00E6EA04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A64C315B47D1A00E6EA04 /* AppDelegate.m */; };
 		ED3A64C715B47D1A00E6EA04 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED3A64C515B47D1A00E6EA04 /* MainStoryboard.storyboard */; };
 		ED3A64CA15B47D1A00E6EA04 /* EditApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED3A64C815B47D1A00E6EA04 /* EditApp.xcdatamodeld */; };
-		ED3A64CD15B47D1A00E6EA04 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A64CC15B47D1A00E6EA04 /* MasterViewController.m */; };
-		ED3A64D015B47D1A00E6EA04 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A64CF15B47D1A00E6EA04 /* DetailViewController.m */; };
 		ED3A64D815B47D1A00E6EA04 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64D715B47D1A00E6EA04 /* SenTestingKit.framework */; };
 		ED3A64D915B47D1A00E6EA04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B115B47D1A00E6EA04 /* UIKit.framework */; };
 		ED3A64DA15B47D1A00E6EA04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B315B47D1A00E6EA04 /* Foundation.framework */; };
 		ED3A64DB15B47D1A00E6EA04 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B715B47D1A00E6EA04 /* CoreData.framework */; };
 		ED3A64E315B47D1A00E6EA04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED3A64E115B47D1A00E6EA04 /* InfoPlist.strings */; };
-		ED3A64E615B47D1A00E6EA04 /* EditAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A64E515B47D1A00E6EA04 /* EditAppTests.m */; };
+		EDAE633815B5E214008D4164 /* VariationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633715B5E214008D4164 /* VariationFactory.m */; };
+		EDAE633915B5E214008D4164 /* VariationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633715B5E214008D4164 /* VariationFactory.m */; };
+		EDAE633D15B5E25B008D4164 /* EditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633C15B5E25B008D4164 /* EditManager.m */; };
+		EDAE633E15B5E25B008D4164 /* EditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633C15B5E25B008D4164 /* EditManager.m */; };
+		EDAE634115B5E35A008D4164 /* EditManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE634015B5E35A008D4164 /* EditManagerTests.m */; };
+		EDAE634415B5E36E008D4164 /* VariationFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE634315B5E36E008D4164 /* VariationFactoryTests.m */; };
+		EDF8D10D15B4918E00765DA9 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8D10C15B4918E00765DA9 /* CoreDataTests.m */; };
+		EDF8D11915B4A73D00765DA9 /* ProductFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8D11815B4A73D00765DA9 /* ProductFactoryTests.m */; };
+		EDF8D12015B4AD8200765DA9 /* ProductFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8D11F15B4AD8200765DA9 /* ProductFactory.m */; };
+		EDF8D12115B4AD8200765DA9 /* ProductFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8D11F15B4AD8200765DA9 /* ProductFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,29 +48,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED037C4515B5C822009F1867 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		ED037C4615B5C822009F1867 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		ED037C4A15B5C822009F1867 /* Variation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variation.h; sourceTree = "<group>"; };
+		ED037C4B15B5C822009F1867 /* Variation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Variation.m; sourceTree = "<group>"; };
 		ED3A64AD15B47D1A00E6EA04 /* EditApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3A64B115B47D1A00E6EA04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED3A64B315B47D1A00E6EA04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED3A64B515B47D1A00E6EA04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ED3A64B715B47D1A00E6EA04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		ED3A64BB15B47D1A00E6EA04 /* EditApp-Info.plist */ = {isa = PBXFileReference; path = "EditApp-Info.plist"; sourceTree = "<group>"; };
+		ED3A64BB15B47D1A00E6EA04 /* EditApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EditApp-Info.plist"; sourceTree = "<group>"; };
 		ED3A64BD15B47D1A00E6EA04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED3A64BF15B47D1A00E6EA04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ED3A64C115B47D1A00E6EA04 /* EditApp-Prefix.pch */ = {isa = PBXFileReference; path = "EditApp-Prefix.pch"; sourceTree = "<group>"; };
-		ED3A64C215B47D1A00E6EA04 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED3A64C115B47D1A00E6EA04 /* EditApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EditApp-Prefix.pch"; sourceTree = "<group>"; };
+		ED3A64C215B47D1A00E6EA04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ED3A64C315B47D1A00E6EA04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ED3A64C615B47D1A00E6EA04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		ED3A64C915B47D1A00E6EA04 /* EditApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EditApp.xcdatamodel; sourceTree = "<group>"; };
-		ED3A64CB15B47D1A00E6EA04 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
-		ED3A64CC15B47D1A00E6EA04 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		ED3A64CE15B47D1A00E6EA04 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
-		ED3A64CF15B47D1A00E6EA04 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		ED3A64D615B47D1A00E6EA04 /* EditAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EditAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3A64D715B47D1A00E6EA04 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		ED3A64E015B47D1A00E6EA04 /* EditAppTests-Info.plist */ = {isa = PBXFileReference; path = "EditAppTests-Info.plist"; sourceTree = "<group>"; };
+		ED3A64E015B47D1A00E6EA04 /* EditAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EditAppTests-Info.plist"; sourceTree = "<group>"; };
 		ED3A64E215B47D1A00E6EA04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ED3A64E415B47D1A00E6EA04 /* EditAppTests.h */ = {isa = PBXFileReference; path = EditAppTests.h; sourceTree = "<group>"; };
-		ED3A64E515B47D1A00E6EA04 /* EditAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditAppTests.m; sourceTree = "<group>"; };
+		EDAE633615B5E214008D4164 /* VariationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationFactory.h; sourceTree = "<group>"; };
+		EDAE633715B5E214008D4164 /* VariationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationFactory.m; sourceTree = "<group>"; };
+		EDAE633B15B5E25B008D4164 /* EditManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditManager.h; sourceTree = "<group>"; };
+		EDAE633C15B5E25B008D4164 /* EditManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditManager.m; sourceTree = "<group>"; };
+		EDAE633F15B5E35A008D4164 /* EditManagerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditManagerTests.h; sourceTree = "<group>"; };
+		EDAE634015B5E35A008D4164 /* EditManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditManagerTests.m; sourceTree = "<group>"; };
+		EDAE634215B5E36E008D4164 /* VariationFactoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationFactoryTests.h; sourceTree = "<group>"; };
+		EDAE634315B5E36E008D4164 /* VariationFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationFactoryTests.m; sourceTree = "<group>"; };
+		EDF8D10B15B4918E00765DA9 /* CoreDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTests.h; sourceTree = "<group>"; };
+		EDF8D10C15B4918E00765DA9 /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
+		EDF8D11715B4A73D00765DA9 /* ProductFactoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFactoryTests.h; sourceTree = "<group>"; };
+		EDF8D11815B4A73D00765DA9 /* ProductFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFactoryTests.m; sourceTree = "<group>"; };
+		EDF8D11E15B4AD8200765DA9 /* ProductFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFactory.h; sourceTree = "<group>"; };
+		EDF8D11F15B4AD8200765DA9 /* ProductFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +148,14 @@
 				ED3A64C215B47D1A00E6EA04 /* AppDelegate.h */,
 				ED3A64C315B47D1A00E6EA04 /* AppDelegate.m */,
 				ED3A64C515B47D1A00E6EA04 /* MainStoryboard.storyboard */,
-				ED3A64CB15B47D1A00E6EA04 /* MasterViewController.h */,
-				ED3A64CC15B47D1A00E6EA04 /* MasterViewController.m */,
-				ED3A64CE15B47D1A00E6EA04 /* DetailViewController.h */,
-				ED3A64CF15B47D1A00E6EA04 /* DetailViewController.m */,
-				ED3A64C815B47D1A00E6EA04 /* EditApp.xcdatamodeld */,
+				ED3A64EF15B47DF800E6EA04 /* Model */,
 				ED3A64BA15B47D1A00E6EA04 /* Supporting Files */,
+				EDAE633B15B5E25B008D4164 /* EditManager.h */,
+				EDAE633C15B5E25B008D4164 /* EditManager.m */,
+				EDF8D11E15B4AD8200765DA9 /* ProductFactory.h */,
+				EDF8D11F15B4AD8200765DA9 /* ProductFactory.m */,
+				EDAE633615B5E214008D4164 /* VariationFactory.h */,
+				EDAE633715B5E214008D4164 /* VariationFactory.m */,
 			);
 			path = EditApp;
 			sourceTree = "<group>";
@@ -149,8 +174,8 @@
 		ED3A64DE15B47D1A00E6EA04 /* EditAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED3A64E415B47D1A00E6EA04 /* EditAppTests.h */,
-				ED3A64E515B47D1A00E6EA04 /* EditAppTests.m */,
+				EDF8D11215B4A66500765DA9 /* Application Tests  */,
+				EDF8D10715B4900800765DA9 /* Model Tests */,
 				ED3A64DF15B47D1A00E6EA04 /* Supporting Files */,
 			);
 			path = EditAppTests;
@@ -163,6 +188,40 @@
 				ED3A64E115B47D1A00E6EA04 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED3A64EF15B47DF800E6EA04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED037C4515B5C822009F1867 /* Product.h */,
+				ED037C4615B5C822009F1867 /* Product.m */,
+				ED037C4A15B5C822009F1867 /* Variation.h */,
+				ED037C4B15B5C822009F1867 /* Variation.m */,
+				ED3A64C815B47D1A00E6EA04 /* EditApp.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EDF8D10715B4900800765DA9 /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF8D10B15B4918E00765DA9 /* CoreDataTests.h */,
+				EDF8D10C15B4918E00765DA9 /* CoreDataTests.m */,
+			);
+			name = "Model Tests";
+			sourceTree = "<group>";
+		};
+		EDF8D11215B4A66500765DA9 /* Application Tests  */ = {
+			isa = PBXGroup;
+			children = (
+				EDF8D11715B4A73D00765DA9 /* ProductFactoryTests.h */,
+				EDF8D11815B4A73D00765DA9 /* ProductFactoryTests.m */,
+				EDAE634215B5E36E008D4164 /* VariationFactoryTests.h */,
+				EDAE634315B5E36E008D4164 /* VariationFactoryTests.m */,
+				EDAE633F15B5E35A008D4164 /* EditManagerTests.h */,
+				EDAE634015B5E35A008D4164 /* EditManagerTests.m */,
+			);
+			name = "Application Tests ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +334,11 @@
 				ED3A64C015B47D1A00E6EA04 /* main.m in Sources */,
 				ED3A64C415B47D1A00E6EA04 /* AppDelegate.m in Sources */,
 				ED3A64CA15B47D1A00E6EA04 /* EditApp.xcdatamodeld in Sources */,
-				ED3A64CD15B47D1A00E6EA04 /* MasterViewController.m in Sources */,
-				ED3A64D015B47D1A00E6EA04 /* DetailViewController.m in Sources */,
+				EDF8D12015B4AD8200765DA9 /* ProductFactory.m in Sources */,
+				ED037C4715B5C822009F1867 /* Product.m in Sources */,
+				ED037C4C15B5C822009F1867 /* Variation.m in Sources */,
+				EDAE633815B5E214008D4164 /* VariationFactory.m in Sources */,
+				EDAE633D15B5E25B008D4164 /* EditManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +346,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3A64E615B47D1A00E6EA04 /* EditAppTests.m in Sources */,
+				EDF8D10D15B4918E00765DA9 /* CoreDataTests.m in Sources */,
+				EDF8D11915B4A73D00765DA9 /* ProductFactoryTests.m in Sources */,
+				EDF8D12115B4AD8200765DA9 /* ProductFactory.m in Sources */,
+				ED037C4815B5C822009F1867 /* Product.m in Sources */,
+				ED037C4D15B5C822009F1867 /* Variation.m in Sources */,
+				EDAE633915B5E214008D4164 /* VariationFactory.m in Sources */,
+				EDAE633E15B5E25B008D4164 /* EditManager.m in Sources */,
+				EDAE634115B5E35A008D4164 /* EditManagerTests.m in Sources */,
+				EDAE634415B5E36E008D4164 /* VariationFactoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +518,7 @@
 				ED3A64EB15B47D1A00E6EA04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED3A64EC15B47D1A00E6EA04 /* Build configuration list for PBXNativeTarget "EditAppTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +527,7 @@
 				ED3A64EE15B47D1A00E6EA04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
