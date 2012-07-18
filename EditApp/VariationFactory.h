@@ -16,6 +16,6 @@
 @property(strong, nonatomic) NSManagedObjectContext *context;
 
 -(Variation *)createVariationWithTheName:(NSString *)name thePrice:(NSNumber *)price andIsItTheMaster:(BOOL)master;
-
+-(void)deleteVariation:(Variation *)variation;
 
 @end

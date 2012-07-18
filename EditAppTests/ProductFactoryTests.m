@@ -19,7 +19,7 @@
     store = [coordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:NULL];
     context = [[NSManagedObjectContext alloc] init ];
     [context setPersistentStoreCoordinator:coordinator];
-    
+        
     productFactory = [[ProductFactory alloc] init];
     productFactory.context = context;
 }
@@ -60,5 +60,11 @@
     STAssertEquals(newProduct.image, imageToUse, @"Should be able to set and access image of new product");
 }
 
+-(void)testProductCanChangeName
+{
+    Product *newProduct = [productFactory createProductWithTheName:@"Shirt" theImage:nil];
+    newProduct.name = @"Cup";    
+    STAssertEquals(newProduct.name, @"Cup", @"Should be able to change the name of a created product");
+}
 
 @end

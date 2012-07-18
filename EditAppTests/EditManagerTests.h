@@ -8,8 +8,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 @class EditManager;
+@class MockIDManager;
 @class Product;
 @class Variation;
+
 @interface EditManagerTests : SenTestCase
 {
     NSPersistentStoreCoordinator *coordinator;
@@ -18,6 +20,7 @@
     NSPersistentStore *store;
     
     EditManager *editManager;
+    MockIDManager *idManager;
     
     Product *product;
     

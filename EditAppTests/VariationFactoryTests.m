@@ -59,4 +59,5 @@
     STAssertEquals([newVariation.price doubleValue], 3.5, @"Should be able to access created variation name");
 }
 
+
 @end

@@ -21,5 +21,10 @@
     return newVariation;
 }
 
+-(void)deleteVariation:(Variation *)variation
+{
+    [context deleteObject:variation];
+    variation = nil;
+}
 
 @end

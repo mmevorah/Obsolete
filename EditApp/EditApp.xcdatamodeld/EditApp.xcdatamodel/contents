@@ -4,7 +4,7 @@
         <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="variation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Variation" inverseName="product" inverseEntity="Variation"/>
+        <relationship name="variation" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Variation" inverseName="product" inverseEntity="Variation"/>
     </entity>
     <entity name="Variation" representedClassName="Variation" syncable="YES">
         <attribute name="iD" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>

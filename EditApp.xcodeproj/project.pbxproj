@@ -25,6 +25,10 @@
 		ED3A64DA15B47D1A00E6EA04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B315B47D1A00E6EA04 /* Foundation.framework */; };
 		ED3A64DB15B47D1A00E6EA04 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B715B47D1A00E6EA04 /* CoreData.framework */; };
 		ED3A64E315B47D1A00E6EA04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED3A64E115B47D1A00E6EA04 /* InfoPlist.strings */; };
+		ED700A3815B6060000973B64 /* IDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED700A3715B6060000973B64 /* IDManager.m */; };
+		ED700A3915B6060000973B64 /* IDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED700A3715B6060000973B64 /* IDManager.m */; };
+		ED700A3D15B6062300973B64 /* MockIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED700A3C15B6062300973B64 /* MockIDManager.m */; };
+		ED700A4015B6066500973B64 /* IDManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED700A3F15B6066500973B64 /* IDManagerTests.m */; };
 		EDAE633815B5E214008D4164 /* VariationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633715B5E214008D4164 /* VariationFactory.m */; };
 		EDAE633915B5E214008D4164 /* VariationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633715B5E214008D4164 /* VariationFactory.m */; };
 		EDAE633D15B5E25B008D4164 /* EditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633C15B5E25B008D4164 /* EditManager.m */; };
@@ -69,6 +73,12 @@
 		ED3A64D715B47D1A00E6EA04 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		ED3A64E015B47D1A00E6EA04 /* EditAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EditAppTests-Info.plist"; sourceTree = "<group>"; };
 		ED3A64E215B47D1A00E6EA04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ED700A3615B6060000973B64 /* IDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDManager.h; sourceTree = "<group>"; };
+		ED700A3715B6060000973B64 /* IDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDManager.m; sourceTree = "<group>"; };
+		ED700A3B15B6062300973B64 /* MockIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockIDManager.h; sourceTree = "<group>"; };
+		ED700A3C15B6062300973B64 /* MockIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockIDManager.m; sourceTree = "<group>"; };
+		ED700A3E15B6066500973B64 /* IDManagerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDManagerTests.h; sourceTree = "<group>"; };
+		ED700A3F15B6066500973B64 /* IDManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDManagerTests.m; sourceTree = "<group>"; };
 		EDAE633615B5E214008D4164 /* VariationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationFactory.h; sourceTree = "<group>"; };
 		EDAE633715B5E214008D4164 /* VariationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationFactory.m; sourceTree = "<group>"; };
 		EDAE633B15B5E25B008D4164 /* EditManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditManager.h; sourceTree = "<group>"; };
@@ -152,6 +162,8 @@
 				ED3A64BA15B47D1A00E6EA04 /* Supporting Files */,
 				EDAE633B15B5E25B008D4164 /* EditManager.h */,
 				EDAE633C15B5E25B008D4164 /* EditManager.m */,
+				ED700A3615B6060000973B64 /* IDManager.h */,
+				ED700A3715B6060000973B64 /* IDManager.m */,
 				EDF8D11E15B4AD8200765DA9 /* ProductFactory.h */,
 				EDF8D11F15B4AD8200765DA9 /* ProductFactory.m */,
 				EDAE633615B5E214008D4164 /* VariationFactory.h */,
@@ -220,6 +232,10 @@
 				EDAE634315B5E36E008D4164 /* VariationFactoryTests.m */,
 				EDAE633F15B5E35A008D4164 /* EditManagerTests.h */,
 				EDAE634015B5E35A008D4164 /* EditManagerTests.m */,
+				ED700A3E15B6066500973B64 /* IDManagerTests.h */,
+				ED700A3F15B6066500973B64 /* IDManagerTests.m */,
+				ED700A3B15B6062300973B64 /* MockIDManager.h */,
+				ED700A3C15B6062300973B64 /* MockIDManager.m */,
 			);
 			name = "Application Tests ";
 			sourceTree = "<group>";
@@ -339,6 +355,7 @@
 				ED037C4C15B5C822009F1867 /* Variation.m in Sources */,
 				EDAE633815B5E214008D4164 /* VariationFactory.m in Sources */,
 				EDAE633D15B5E25B008D4164 /* EditManager.m in Sources */,
+				ED700A3815B6060000973B64 /* IDManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +372,9 @@
 				EDAE633E15B5E25B008D4164 /* EditManager.m in Sources */,
 				EDAE634115B5E35A008D4164 /* EditManagerTests.m in Sources */,
 				EDAE634415B5E36E008D4164 /* VariationFactoryTests.m in Sources */,
+				ED700A3915B6060000973B64 /* IDManager.m in Sources */,
+				ED700A3D15B6062300973B64 /* MockIDManager.m in Sources */,
+				ED700A4015B6066500973B64 /* IDManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
