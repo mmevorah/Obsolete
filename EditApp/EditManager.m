@@ -45,8 +45,6 @@
     
     newProduct.iD = [idManager nextAvailableProductID];
     newVariation.iD = [idManager nextAvailableVariantID];
-    [idManager incrementTempProductIDCount];
-    [idManager incrementTempVariantIDCount];
     
     [newProduct addVariationObject:newVariation];
     
@@ -57,8 +55,7 @@
 {
     Variation *newVariation = [variationFactory createVariationWithTheName:name thePrice:price andIsItTheMaster:NO];
     newVariation.iD = [idManager nextAvailableVariantID];
-    [idManager incrementTempVariantIDCount];
-    
+        
     [product addVariationObject:newVariation];
 }
 
@@ -111,6 +108,7 @@
     variation.price = price;
 }
 
+
 -(void)saveContext
 {
     AppDelegate *theDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
@@ -121,7 +119,7 @@
 -(void)cancelContext
 {
     [context rollback];
-    
+    [idManager cancelIDS];
 }
 
 

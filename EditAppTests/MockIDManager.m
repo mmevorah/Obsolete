@@ -13,13 +13,10 @@
 
 -(id)init
 {
-    if(self = [super init])
-    {
-        productIDCount = 0;
-        variantIDCount = 0;
-        tempProductIDCount = 0;
-        tempVariantIDCount = 0;
-    }
+    productIDCount = 0;
+    variantIDCount = 0;
+    tempProductIDCount = 0;
+    tempVariantIDCount = 0;
     return self;
 }
 

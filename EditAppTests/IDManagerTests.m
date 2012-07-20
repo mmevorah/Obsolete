@@ -27,15 +27,16 @@
     STAssertTrue(([idManager.tempProductIDCount boolValue] | [idManager.tempVariantIDCount boolValue ] | [idManager.productIDCount boolValue] | [idManager.variantIDCount boolValue]) == 0, @"idManager Should start at zero");
 }
 
+
 -(void)testCanIncrementTempProductIDCount
 {
-    [idManager incrementTempProductIDCount];
+    [idManager nextAvailableProductID];
     STAssertEquals([idManager.tempProductIDCount intValue], 1, @"idManager Should be able to increment the tempProductIDCount");
 }
 
 -(void)testCanIncrementTempVariantIDCount
 {
-    [idManager incrementTempVariantIDCount];
+    [idManager nextAvailableVariantID];
     STAssertEquals([idManager.tempVariantIDCount intValue], 1, @"idManager Should be able to increment the tempProductIDcount");
 }
 

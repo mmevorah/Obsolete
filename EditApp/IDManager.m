@@ -42,24 +42,19 @@
     return self;
 }
 
--(void)incrementTempProductIDCount
-{
-    tempProductIDCount =  [NSNumber numberWithInt:([tempProductIDCount intValue] + 1)];
-}
-
--(void)incrementTempVariantIDCount
-{
-    tempVariantIDCount = [NSNumber numberWithInt:([tempVariantIDCount intValue] + 1)];
-}
 
 -(NSNumber *)nextAvailableProductID
 {
-    return [NSNumber numberWithInt:([tempProductIDCount intValue] + [productIDCount intValue])];
+    NSNumber *nextAvailableProductID = [NSNumber numberWithInt:([tempProductIDCount intValue] + [productIDCount intValue])];
+    tempProductIDCount =  [NSNumber numberWithInt:([tempProductIDCount intValue] + 1)];
+    return nextAvailableProductID;
 }
 
 -(NSNumber *)nextAvailableVariantID
 {
-    return [NSNumber numberWithInt:([tempVariantIDCount intValue] + [variantIDCount intValue])];
+    NSNumber *nextAvailableVariantID = [NSNumber numberWithInt:([tempVariantIDCount intValue] + [variantIDCount intValue])];
+    tempVariantIDCount = [NSNumber numberWithInt:([tempVariantIDCount intValue] + 1)];
+    return nextAvailableVariantID;
 }
 
 -(void)saveIDS

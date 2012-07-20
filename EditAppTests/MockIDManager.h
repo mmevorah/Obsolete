@@ -9,6 +9,5 @@
 #import "IDManager.h"
 
 @interface MockIDManager : IDManager
-
 -(id)init;
 @end

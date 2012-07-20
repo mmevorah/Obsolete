@@ -24,8 +24,6 @@
 
 
 -(id)init;
--(void)incrementTempProductIDCount;
--(void)incrementTempVariantIDCount;
 -(NSNumber *)nextAvailableProductID;
 -(NSNumber *)nextAvailableVariantID;
 

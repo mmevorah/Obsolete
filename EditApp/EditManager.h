@@ -22,8 +22,10 @@
 @property(strong, nonatomic) NSManagedObjectContext *context;
 
 -(id)initWithManagedObjectContext:(NSManagedObjectContext*)setContext andIDManager:(IDManager *)setIDManager;
+
 -(Product*)createProductWithAName:(NSString *)name anImage:(UIImage*)image andAPrice:(NSNumber *)price;
 -(void)addVariationToProduct:(Product *)product withName:(NSString *)name andPrice:(NSNumber *)price;
+
 -(void)deleteVariation:(Variation *)variation inProduct:(Product *)product;
 -(void)deleteProduct:(Product *)product;
 
