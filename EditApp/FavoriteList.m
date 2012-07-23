@@ -33,8 +33,7 @@
 
 -(int)size
 {
-    int blah = (int)list.count;
-    return blah;
+    return (int)list.count;
 }
 
 -(void)addProductWithID:(NSNumber *)productID toPosition:(int)posNumber
