@@ -13,8 +13,6 @@
 #import "Variation.h"
 #import "IDManager.h"
 #import "AppDelegate.h"
-#import "Favorites.h"
-
 
 @implementation EditManager
 

@@ -11,8 +11,11 @@
 		ED037C4815B5C822009F1867 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4615B5C822009F1867 /* Product.m */; };
 		ED037C4C15B5C822009F1867 /* Variation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4B15B5C822009F1867 /* Variation.m */; };
 		ED037C4D15B5C822009F1867 /* Variation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4B15B5C822009F1867 /* Variation.m */; };
-		ED10836715B9C62400B9E612 /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10836615B9C62400B9E612 /* Favorites.m */; };
-		ED10836815B9C62400B9E612 /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10836615B9C62400B9E612 /* Favorites.m */; };
+		ED039D6915BDB5AF0015D8D7 /* FavoritesManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D6815BDB5AF0015D8D7 /* FavoritesManagerTests.m */; };
+		ED039D6F15BDB7F80015D8D7 /* FavoritesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D6E15BDB7F80015D8D7 /* FavoritesManager.m */; };
+		ED039D7015BDB7F80015D8D7 /* FavoritesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D6E15BDB7F80015D8D7 /* FavoritesManager.m */; };
+		ED039D7715BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D7615BDBACD0015D8D7 /* MockFavoritesManager.m */; };
+		ED039D7815BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D7615BDBACD0015D8D7 /* MockFavoritesManager.m */; };
 		ED3A64B215B47D1A00E6EA04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B115B47D1A00E6EA04 /* UIKit.framework */; };
 		ED3A64B415B47D1A00E6EA04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B315B47D1A00E6EA04 /* Foundation.framework */; };
 		ED3A64B615B47D1A00E6EA04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B515B47D1A00E6EA04 /* CoreGraphics.framework */; };
@@ -31,6 +34,9 @@
 		ED700A3915B6060000973B64 /* IDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED700A3715B6060000973B64 /* IDManager.m */; };
 		ED700A3D15B6062300973B64 /* MockIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED700A3C15B6062300973B64 /* MockIDManager.m */; };
 		ED700A4015B6066500973B64 /* IDManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED700A3F15B6066500973B64 /* IDManagerTests.m */; };
+		ED75F6B415BDC3C200693890 /* FavoriteList.m in Sources */ = {isa = PBXBuildFile; fileRef = ED75F6B315BDC3C200693890 /* FavoriteList.m */; };
+		ED75F6B515BDC3C200693890 /* FavoriteList.m in Sources */ = {isa = PBXBuildFile; fileRef = ED75F6B315BDC3C200693890 /* FavoriteList.m */; };
+		ED75F6BC15BDC4E100693890 /* FavoriteListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED75F6BB15BDC4E100693890 /* FavoriteListTests.m */; };
 		EDAE633815B5E214008D4164 /* VariationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633715B5E214008D4164 /* VariationFactory.m */; };
 		EDAE633915B5E214008D4164 /* VariationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633715B5E214008D4164 /* VariationFactory.m */; };
 		EDAE633D15B5E25B008D4164 /* EditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633C15B5E25B008D4164 /* EditManager.m */; };
@@ -58,8 +64,12 @@
 		ED037C4615B5C822009F1867 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		ED037C4A15B5C822009F1867 /* Variation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variation.h; sourceTree = "<group>"; };
 		ED037C4B15B5C822009F1867 /* Variation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Variation.m; sourceTree = "<group>"; };
-		ED10836515B9C62400B9E612 /* Favorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorites.h; sourceTree = "<group>"; };
-		ED10836615B9C62400B9E612 /* Favorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorites.m; sourceTree = "<group>"; };
+		ED039D6715BDB5AE0015D8D7 /* FavoritesManagerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesManagerTests.h; sourceTree = "<group>"; };
+		ED039D6815BDB5AF0015D8D7 /* FavoritesManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesManagerTests.m; sourceTree = "<group>"; };
+		ED039D6D15BDB7F80015D8D7 /* FavoritesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesManager.h; sourceTree = "<group>"; };
+		ED039D6E15BDB7F80015D8D7 /* FavoritesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesManager.m; sourceTree = "<group>"; };
+		ED039D7515BDBACD0015D8D7 /* MockFavoritesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockFavoritesManager.h; sourceTree = "<group>"; };
+		ED039D7615BDBACD0015D8D7 /* MockFavoritesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockFavoritesManager.m; sourceTree = "<group>"; };
 		ED3A64AD15B47D1A00E6EA04 /* EditApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3A64B115B47D1A00E6EA04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED3A64B315B47D1A00E6EA04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +93,10 @@
 		ED700A3C15B6062300973B64 /* MockIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockIDManager.m; sourceTree = "<group>"; };
 		ED700A3E15B6066500973B64 /* IDManagerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDManagerTests.h; sourceTree = "<group>"; };
 		ED700A3F15B6066500973B64 /* IDManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDManagerTests.m; sourceTree = "<group>"; };
+		ED75F6B215BDC3C200693890 /* FavoriteList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteList.h; sourceTree = "<group>"; };
+		ED75F6B315BDC3C200693890 /* FavoriteList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteList.m; sourceTree = "<group>"; };
+		ED75F6BA15BDC4E100693890 /* FavoriteListTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteListTests.h; sourceTree = "<group>"; };
+		ED75F6BB15BDC4E100693890 /* FavoriteListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteListTests.m; sourceTree = "<group>"; };
 		EDAE633615B5E214008D4164 /* VariationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationFactory.h; sourceTree = "<group>"; };
 		EDAE633715B5E214008D4164 /* VariationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationFactory.m; sourceTree = "<group>"; };
 		EDAE633B15B5E25B008D4164 /* EditManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditManager.h; sourceTree = "<group>"; };
@@ -130,6 +144,8 @@
 			children = (
 				ED700A3B15B6062300973B64 /* MockIDManager.h */,
 				ED700A3C15B6062300973B64 /* MockIDManager.m */,
+				ED039D7515BDBACD0015D8D7 /* MockFavoritesManager.h */,
+				ED039D7615BDBACD0015D8D7 /* MockFavoritesManager.m */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -177,6 +193,8 @@
 				EDAE633C15B5E25B008D4164 /* EditManager.m */,
 				ED700A3615B6060000973B64 /* IDManager.h */,
 				ED700A3715B6060000973B64 /* IDManager.m */,
+				ED039D6D15BDB7F80015D8D7 /* FavoritesManager.h */,
+				ED039D6E15BDB7F80015D8D7 /* FavoritesManager.m */,
 				EDF8D11E15B4AD8200765DA9 /* ProductFactory.h */,
 				EDF8D11F15B4AD8200765DA9 /* ProductFactory.m */,
 				EDAE633615B5E214008D4164 /* VariationFactory.h */,
@@ -221,10 +239,10 @@
 				ED037C4515B5C822009F1867 /* Product.h */,
 				ED037C4615B5C822009F1867 /* Product.m */,
 				ED037C4B15B5C822009F1867 /* Variation.m */,
-				ED10836515B9C62400B9E612 /* Favorites.h */,
-				ED10836615B9C62400B9E612 /* Favorites.m */,
-				ED3A64C815B47D1A00E6EA04 /* EditApp.xcdatamodeld */,
 				ED037C4A15B5C822009F1867 /* Variation.h */,
+				ED75F6B215BDC3C200693890 /* FavoriteList.h */,
+				ED75F6B315BDC3C200693890 /* FavoriteList.m */,
+				ED3A64C815B47D1A00E6EA04 /* EditApp.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -250,6 +268,10 @@
 				EDAE634015B5E35A008D4164 /* EditManagerTests.m */,
 				ED700A3E15B6066500973B64 /* IDManagerTests.h */,
 				ED700A3F15B6066500973B64 /* IDManagerTests.m */,
+				ED039D6715BDB5AE0015D8D7 /* FavoritesManagerTests.h */,
+				ED039D6815BDB5AF0015D8D7 /* FavoritesManagerTests.m */,
+				ED75F6BA15BDC4E100693890 /* FavoriteListTests.h */,
+				ED75F6BB15BDC4E100693890 /* FavoriteListTests.m */,
 			);
 			name = "Application Tests ";
 			sourceTree = "<group>";
@@ -370,7 +392,9 @@
 				EDAE633815B5E214008D4164 /* VariationFactory.m in Sources */,
 				EDAE633D15B5E25B008D4164 /* EditManager.m in Sources */,
 				ED700A3815B6060000973B64 /* IDManager.m in Sources */,
-				ED10836715B9C62400B9E612 /* Favorites.m in Sources */,
+				ED039D6F15BDB7F80015D8D7 /* FavoritesManager.m in Sources */,
+				ED039D7715BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */,
+				ED75F6B415BDC3C200693890 /* FavoriteList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +414,11 @@
 				ED700A3915B6060000973B64 /* IDManager.m in Sources */,
 				ED700A3D15B6062300973B64 /* MockIDManager.m in Sources */,
 				ED700A4015B6066500973B64 /* IDManagerTests.m in Sources */,
-				ED10836815B9C62400B9E612 /* Favorites.m in Sources */,
+				ED039D6915BDB5AF0015D8D7 /* FavoritesManagerTests.m in Sources */,
+				ED039D7015BDB7F80015D8D7 /* FavoritesManager.m in Sources */,
+				ED039D7815BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */,
+				ED75F6B515BDC3C200693890 /* FavoriteList.m in Sources */,
+				ED75F6BC15BDC4E100693890 /* FavoriteListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

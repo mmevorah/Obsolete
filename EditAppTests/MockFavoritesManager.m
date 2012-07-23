@@ -1,13 +1,19 @@
 //
-//  FavoritesManager.h
+//  MockFavoritesManager.m
 //  EditApp
 //
 //  Created by Mark Mevorah on 7/23/12.
 //  Copyright (c) 2012 University of Michigan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "MockFavoritesManager.h"
 
-@interface FavoritesManager : NSObject
+@implementation MockFavoritesManager
+
+-(id)init
+{
+
+    return self;
+}
 
 @end
