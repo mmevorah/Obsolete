@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class FavoriteList;
 @interface FavoritesManager : NSObject
+
+@property(strong, nonatomic)FavoriteList *favList0;
+@property(strong, nonatomic)FavoriteList *favList1;
+@property(strong, nonatomic)FavoriteList *favList2;
+@property(strong, nonatomic)FavoriteList *favList3;
+@property(strong, nonatomic)FavoriteList *favList4;
+
+-(void)insertProductWithID:(NSNumber*)productID intoFavoritesList:(int)favList atPosition:(int)pos;
+-(void)removeProductFromList:(int)favList atPostion:(int)pos;
 
 @end

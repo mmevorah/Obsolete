@@ -10,6 +10,7 @@
 
 @interface MockFavoritesManager : FavoritesManager
 
+
 -(id)init;
 
 

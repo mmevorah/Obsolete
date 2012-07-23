@@ -7,12 +7,16 @@
 //
 
 #import "MockFavoritesManager.h"
-
+#import "FavoriteList.h"
 @implementation MockFavoritesManager
 
 -(id)init
 {
-
+    self.favList0 = [[FavoriteList alloc] init];
+    self.favList1 = [[FavoriteList alloc] init];
+    self.favList2 = [[FavoriteList alloc] init];
+    self.favList3 = [[FavoriteList alloc] init];
+    self.favList4 = [[FavoriteList alloc] init];
     return self;
 }
 

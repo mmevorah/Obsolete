@@ -10,11 +10,13 @@
 
 @implementation FavoriteList
 @synthesize list;
+@synthesize hidden;
 
 -(id)init
 {
     if(self = [super init])
     {
+        hidden = YES;
         list = [[NSMutableArray alloc] init];
         [self setUpList];
     }

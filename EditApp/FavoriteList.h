@@ -11,6 +11,7 @@
 @interface FavoriteList : NSObject
 
 @property(strong, nonatomic)NSMutableArray *list;
+@property BOOL hidden;
 
 -(id)init;
 -(int)size;

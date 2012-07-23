@@ -55,5 +55,10 @@
     STAssertEquals([[favList.list objectAtIndex:5]intValue], -1,    @"Should be able to clear objects");
 }
 
+-(void)testDefaultIsHidden
+{
+    STAssertEquals([favList hidden], YES, @"Hidden should default to true");
+}
+
 
 @end
