@@ -9,6 +9,8 @@
 #import "EditManagerTests.h"
 #import "EditManager.h"
 #import "MockIDManager.h"
+#import "MockFavoritesManager.h"
+#import "FavoriteList.h"
 #import "Product.h"
 #import "Variation.h"
 @implementation EditManagerTests
@@ -27,8 +29,11 @@
     idManager.variantIDCount = [NSNumber numberWithInt: 1];
     idManager.tempVariantIDCount = [NSNumber numberWithInt:2];
     
+    mockFavoritesManager = [[MockFavoritesManager alloc] init];
+    
     editManager = [[EditManager alloc] initWithManagedObjectContext:context andIDManager:idManager];
-
+    editManager.favoriteManager = mockFavoritesManager;
+    
     product = [editManager createProductWithAName: @"Shirt" anImage: nil andAPrice: [NSNumber numberWithDouble:3.50]];
     
 }
@@ -36,7 +41,7 @@
 -(void)tearDown
 {
     editManager = nil;
-    
+    mockFavoritesManager = nil;
     context = nil;
     NSError *error = nil;
     STAssertTrue([coordinator removePersistentStore:store error:&error],@"couldn't remove persistent store: %@", error);
@@ -160,5 +165,17 @@
     STAssertEquals([[[product.variation.allObjects objectAtIndex:0] price] doubleValue], 3.3, @"Variation price should be able to be changed");
 }
 
+-(void)testCanAddProductToFavorites
+{
+    [editManager addProductToFavoritesWithID:product.iD toFavoritesList:0 atPosition:[NSNumber numberWithInt:12]];
+    STAssertEquals([[editManager.favoriteManager.favList0.list objectAtIndex:12] intValue] , [product.iD intValue], @"Edit manager can add favorites");
+}
+
+-(void)testCanRemoveProductFromAFavoritesList
+{
+    [editManager addProductToFavoritesWithID:product.iD toFavoritesList:0 atPosition:[NSNumber numberWithInt:23]];
+    [editManager removeProductFromFavoritesList:0 position: [NSNumber numberWithInt: 23]];
+    STAssertEquals([[editManager.favoriteManager.favList0.list objectAtIndex:23] intValue], -1, @"Edit manager should be able to remove products from favorites");
+}
 
 @end

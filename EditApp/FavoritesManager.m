@@ -12,6 +12,16 @@
 
 @synthesize favList0, favList1, favList2, favList3, favList4;
 
+-(id)init
+{
+    NSLog(@"THIS SHOULD NOT RUN!!!!!!!!!!!!!!!");
+    if(self = [super init])
+    {
+        
+    }
+    return self;
+}
+
 -(void)insertProductWithID:(NSNumber*)productID intoFavoritesList:(int)favList atPosition:(int)pos
 {
     if(favList == 0)

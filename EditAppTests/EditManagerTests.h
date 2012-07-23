@@ -9,6 +9,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 @class EditManager;
 @class MockIDManager;
+@class MockFavoritesManager;
 @class Product;
 @class Variation;
 
@@ -21,6 +22,7 @@
     
     EditManager *editManager;
     MockIDManager *idManager;
+    MockFavoritesManager *mockFavoritesManager;
     
     Product *product;
     

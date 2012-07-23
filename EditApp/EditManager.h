@@ -14,12 +14,14 @@
 @class VariationFactory;
 @class IDManager;
 @class Favorites;
+@class FavoritesManager;
 
 @interface EditManager : NSObject
 
 @property(strong, nonatomic) ProductFactory *productFactory;
 @property(strong, nonatomic) VariationFactory *variationFactory;
 @property(strong, nonatomic) IDManager *idManager;
+@property(strong, nonatomic) FavoritesManager *favoriteManager;
 @property(strong, nonatomic) NSManagedObjectContext *context;
 
 -(id)initWithManagedObjectContext:(NSManagedObjectContext*)setContext andIDManager:(IDManager *)setIDManager;
@@ -36,5 +38,8 @@
 -(void)changeVariation:(Variation *)variation priceTo:(NSNumber *)price;
 
 -(void)saveContext;
+
+-(void)addProductToFavoritesWithID:(NSNumber*)productID toFavoritesList:(int)favList atPosition:(NSNumber*)pos;
+-(void)removeProductFromFavoritesList:(int)favList position:(NSNumber*)pos;
 
 @end

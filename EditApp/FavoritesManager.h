@@ -20,4 +20,7 @@
 -(void)insertProductWithID:(NSNumber*)productID intoFavoritesList:(int)favList atPosition:(int)pos;
 -(void)removeProductFromList:(int)favList atPostion:(int)pos;
 
+-(id)init;
+
+
 @end

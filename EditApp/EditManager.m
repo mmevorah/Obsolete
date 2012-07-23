@@ -13,6 +13,7 @@
 #import "Variation.h"
 #import "IDManager.h"
 #import "AppDelegate.h"
+#import "FavoritesManager.h"
 
 @implementation EditManager
 
@@ -20,6 +21,7 @@
 @synthesize variationFactory;
 @synthesize idManager;
 @synthesize context;
+@synthesize favoriteManager;
 
 -(id)initWithManagedObjectContext:(NSManagedObjectContext *)setContext andIDManager:(IDManager *)setIDManaged
 {
@@ -29,7 +31,6 @@
         variationFactory = [[VariationFactory alloc] init];
         productFactory.context = setContext;
         variationFactory.context = setContext;
-        
         
         context = setContext;
         idManager = setIDManaged;        
@@ -105,6 +106,16 @@
 -(void)changeVariation:(Variation *)variation priceTo:(NSNumber *)price
 {
     variation.price = price;
+}
+
+-(void)addProductToFavoritesWithID:(NSNumber *)productID toFavoritesList:(int)favList atPosition :(NSNumber *)pos
+{
+    [favoriteManager insertProductWithID:productID intoFavoritesList:favList atPosition: [pos intValue]];
+}
+
+-(void)removeProductFromFavoritesList:(int)favList position:(NSNumber *)pos
+{
+    [favoriteManager removeProductFromList:favList atPostion: [pos intValue]];
 }
 
 
