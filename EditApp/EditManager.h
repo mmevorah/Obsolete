@@ -13,6 +13,7 @@
 @class ProductFactory;
 @class VariationFactory;
 @class IDManager;
+@class Favorites;
 
 @interface EditManager : NSObject
 

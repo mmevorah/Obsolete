@@ -19,25 +19,25 @@
 {
     if(self = [super init])
     {
-         //Plist Setup
-         NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
-         NSString *plistPath = [docDir stringByAppendingPathComponent:@"productID.plist"];
-         if([[NSFileManager defaultManager] fileExistsAtPath:plistPath])
-         {
-             NSLog(@"[FOUND PLIST]");
-             source = [NSMutableArray arrayWithContentsOfFile:plistPath];
-             productIDCount = [source objectAtIndex:0];
-             variantIDCount = [source objectAtIndex:1];
-         }else 
-         {
-             NSLog(@"[COULD NO FIND PLIST] CREATING A NEW ONE");
-             source = [[NSMutableArray alloc] init];
-             productIDCount = [[NSNumber alloc] initWithInt:0];
-             variantIDCount = [[NSNumber alloc] initWithInt:0];
-
-             [source addObject:productIDCount];
-             [source addObject:variantIDCount];
-         }
+        //Plist Setup
+        NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+        NSString *plistPath = [docDir stringByAppendingPathComponent:@"productID.plist"];
+        if([[NSFileManager defaultManager] fileExistsAtPath:plistPath])
+        {
+            NSLog(@"[FOUND PLIST]");
+            source = [NSMutableArray arrayWithContentsOfFile:plistPath];
+            productIDCount = [source objectAtIndex:0];
+            variantIDCount = [source objectAtIndex:1];
+        }else 
+        {
+            NSLog(@"[COULD NO FIND PLIST] CREATING A NEW ONE");
+            source = [[NSMutableArray alloc] init];
+            productIDCount = [[NSNumber alloc] initWithInt:0];
+            variantIDCount = [[NSNumber alloc] initWithInt:0];
+            
+            [source addObject:productIDCount];
+            [source addObject:variantIDCount];
+        }
     }
     return self;
 }

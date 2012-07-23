@@ -16,10 +16,10 @@
 
 @property(nonatomic)BOOL hidden;
 
--(id)init;
+-(id)initWithPos:(int)pos;
 -(void)addProduct:(Product *)product;
 -(void)removeProduct:(Product *)product;
--(double)count;
+-(int)count;
 
 -(NSMutableArray*)favoritesList;
 

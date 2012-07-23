@@ -13,6 +13,7 @@
 #import "Variation.h"
 #import "IDManager.h"
 #import "AppDelegate.h"
+#import "Favorites.h"
 
 
 @implementation EditManager
@@ -30,10 +31,10 @@
         variationFactory = [[VariationFactory alloc] init];
         productFactory.context = setContext;
         variationFactory.context = setContext;
-    
-        context = setContext;
-        idManager = setIDManaged;
         
+        
+        context = setContext;
+        idManager = setIDManaged;        
     }
     return self;    
 }

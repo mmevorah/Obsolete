@@ -11,7 +11,6 @@
 		ED037C4815B5C822009F1867 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4615B5C822009F1867 /* Product.m */; };
 		ED037C4C15B5C822009F1867 /* Variation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4B15B5C822009F1867 /* Variation.m */; };
 		ED037C4D15B5C822009F1867 /* Variation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED037C4B15B5C822009F1867 /* Variation.m */; };
-		ED10835C15B9C07B00B9E612 /* FavoritesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10835B15B9C07B00B9E612 /* FavoritesTests.m */; };
 		ED10836715B9C62400B9E612 /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10836615B9C62400B9E612 /* Favorites.m */; };
 		ED10836815B9C62400B9E612 /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10836615B9C62400B9E612 /* Favorites.m */; };
 		ED3A64B215B47D1A00E6EA04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B115B47D1A00E6EA04 /* UIKit.framework */; };
@@ -59,8 +58,6 @@
 		ED037C4615B5C822009F1867 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		ED037C4A15B5C822009F1867 /* Variation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Variation.h; sourceTree = "<group>"; };
 		ED037C4B15B5C822009F1867 /* Variation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Variation.m; sourceTree = "<group>"; };
-		ED10835A15B9C07B00B9E612 /* FavoritesTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTests.h; sourceTree = "<group>"; };
-		ED10835B15B9C07B00B9E612 /* FavoritesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTests.m; sourceTree = "<group>"; };
 		ED10836515B9C62400B9E612 /* Favorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorites.h; sourceTree = "<group>"; };
 		ED10836615B9C62400B9E612 /* Favorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorites.m; sourceTree = "<group>"; };
 		ED3A64AD15B47D1A00E6EA04 /* EditApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,11 +220,11 @@
 			children = (
 				ED037C4515B5C822009F1867 /* Product.h */,
 				ED037C4615B5C822009F1867 /* Product.m */,
-				ED037C4A15B5C822009F1867 /* Variation.h */,
 				ED037C4B15B5C822009F1867 /* Variation.m */,
 				ED10836515B9C62400B9E612 /* Favorites.h */,
 				ED10836615B9C62400B9E612 /* Favorites.m */,
 				ED3A64C815B47D1A00E6EA04 /* EditApp.xcdatamodeld */,
+				ED037C4A15B5C822009F1867 /* Variation.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -253,8 +250,6 @@
 				EDAE634015B5E35A008D4164 /* EditManagerTests.m */,
 				ED700A3E15B6066500973B64 /* IDManagerTests.h */,
 				ED700A3F15B6066500973B64 /* IDManagerTests.m */,
-				ED10835A15B9C07B00B9E612 /* FavoritesTests.h */,
-				ED10835B15B9C07B00B9E612 /* FavoritesTests.m */,
 			);
 			name = "Application Tests ";
 			sourceTree = "<group>";
@@ -395,7 +390,6 @@
 				ED700A3915B6060000973B64 /* IDManager.m in Sources */,
 				ED700A3D15B6062300973B64 /* MockIDManager.m in Sources */,
 				ED700A4015B6066500973B64 /* IDManagerTests.m in Sources */,
-				ED10835C15B9C07B00B9E612 /* FavoritesTests.m in Sources */,
 				ED10836815B9C62400B9E612 /* Favorites.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@
 @implementation Favorites
 @synthesize hidden;
 
--(id)init
+-(id)initWithPos:(int)pos
 {
     if(self = [super init])
     {
@@ -23,7 +23,10 @@
 
 -(void)addProduct:(Product *)product
 {
-    [favoritesList addObject:product];
+    if(self.count < 25)
+    {
+        [favoritesList addObject:product];
+    }
 }
 
 -(void)removeProduct:(Product *)product
@@ -31,7 +34,7 @@
     [favoritesList removeObject:product];
 }
 
--(double)count
+-(int)count
 {
     return favoritesList.count;
 }
