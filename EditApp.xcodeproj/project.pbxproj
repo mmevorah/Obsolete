@@ -139,6 +139,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED0A002815BEEAF600731E13 /* UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UI Tests";
+			sourceTree = "<group>";
+		};
 		ED10835215B9B4FF00B9E612 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +224,7 @@
 		ED3A64DE15B47D1A00E6EA04 /* EditAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A002815BEEAF600731E13 /* UI Tests */,
 				EDF8D11215B4A66500765DA9 /* Application Tests  */,
 				EDF8D10715B4900800765DA9 /* Model Tests */,
 				ED3A64DF15B47D1A00E6EA04 /* Supporting Files */,

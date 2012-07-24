@@ -19,7 +19,7 @@
     if(self = [super init])
     {
         NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
-        NSString *plistPath = [docDir stringByAppendingPathComponent:@"productID.plist"];
+        NSString *plistPath = [docDir stringByAppendingPathComponent:@"favoriteProducts.plist"];
         if([[NSFileManager defaultManager] fileExistsAtPath:plistPath])
         {
             NSLog(@"[FOUND PLIST]");
@@ -87,6 +87,13 @@
     {
         [favList4 clearProductAtPosition:pos];
     }
+}
+
+-(void)saveIDS
+{
+    NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
+    NSString *plistPath = [docDir stringByAppendingPathComponent:@"favoriteProducts.plist"];
+    [source writeToFile:plistPath atomically:YES];
 }
 
 
