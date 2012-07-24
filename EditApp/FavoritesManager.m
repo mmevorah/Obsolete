@@ -89,7 +89,7 @@
     }
 }
 
--(void)saveIDS
+-(void)saveFavorites
 {
     NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
     NSString *plistPath = [docDir stringByAppendingPathComponent:@"favoriteProducts.plist"];

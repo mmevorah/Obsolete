@@ -1,5 +1,5 @@
 //
-//  EmptyTableViewDelegate.h
+//  EmptyTableViewDataSource.h
 //  EditApp
 //
 //  Created by Mark Mevorah on 7/24/12.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface EmptyTableViewDelegate : NSObject <UITableViewDelegate>
+@interface EmptyTableViewDataSource : NSObject <UITableViewDataSource>
 
 @end

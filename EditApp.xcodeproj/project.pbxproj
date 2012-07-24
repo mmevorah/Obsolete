@@ -16,6 +16,13 @@
 		ED039D7015BDB7F80015D8D7 /* FavoritesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D6E15BDB7F80015D8D7 /* FavoritesManager.m */; };
 		ED039D7715BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D7615BDBACD0015D8D7 /* MockFavoritesManager.m */; };
 		ED039D7815BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED039D7615BDBACD0015D8D7 /* MockFavoritesManager.m */; };
+		ED0A002C15BEEDAF00731E13 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A002B15BEEDAF00731E13 /* EditViewController.m */; };
+		ED0A002D15BEEDAF00731E13 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A002B15BEEDAF00731E13 /* EditViewController.m */; };
+		ED0A003015BEEF5500731E13 /* EditViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A002F15BEEF5500731E13 /* EditViewControllerTests.m */; };
+		ED0A003715BEF6D700731E13 /* EmptyTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A003615BEF6D700731E13 /* EmptyTableViewDataSource.m */; };
+		ED0A003815BEF6D700731E13 /* EmptyTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A003615BEF6D700731E13 /* EmptyTableViewDataSource.m */; };
+		ED0A003B15BEF91E00731E13 /* EmptyTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A003A15BEF91E00731E13 /* EmptyTableViewDelegate.m */; };
+		ED0A003C15BEF91E00731E13 /* EmptyTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A003A15BEF91E00731E13 /* EmptyTableViewDelegate.m */; };
 		ED3A64B215B47D1A00E6EA04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B115B47D1A00E6EA04 /* UIKit.framework */; };
 		ED3A64B415B47D1A00E6EA04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B315B47D1A00E6EA04 /* Foundation.framework */; };
 		ED3A64B615B47D1A00E6EA04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B515B47D1A00E6EA04 /* CoreGraphics.framework */; };
@@ -70,6 +77,14 @@
 		ED039D6E15BDB7F80015D8D7 /* FavoritesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesManager.m; sourceTree = "<group>"; };
 		ED039D7515BDBACD0015D8D7 /* MockFavoritesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockFavoritesManager.h; sourceTree = "<group>"; };
 		ED039D7615BDBACD0015D8D7 /* MockFavoritesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockFavoritesManager.m; sourceTree = "<group>"; };
+		ED0A002A15BEEDAF00731E13 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		ED0A002B15BEEDAF00731E13 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		ED0A002E15BEEF5500731E13 /* EditViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewControllerTests.h; sourceTree = "<group>"; };
+		ED0A002F15BEEF5500731E13 /* EditViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewControllerTests.m; sourceTree = "<group>"; };
+		ED0A003515BEF6D700731E13 /* EmptyTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewDataSource.h; sourceTree = "<group>"; };
+		ED0A003615BEF6D700731E13 /* EmptyTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewDataSource.m; sourceTree = "<group>"; };
+		ED0A003915BEF91E00731E13 /* EmptyTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyTableViewDelegate.h; sourceTree = "<group>"; };
+		ED0A003A15BEF91E00731E13 /* EmptyTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyTableViewDelegate.m; sourceTree = "<group>"; };
 		ED3A64AD15B47D1A00E6EA04 /* EditApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3A64B115B47D1A00E6EA04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED3A64B315B47D1A00E6EA04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,6 +157,12 @@
 		ED0A002815BEEAF600731E13 /* UI Tests */ = {
 			isa = PBXGroup;
 			children = (
+				ED0A002E15BEEF5500731E13 /* EditViewControllerTests.h */,
+				ED0A002F15BEEF5500731E13 /* EditViewControllerTests.m */,
+				ED0A003515BEF6D700731E13 /* EmptyTableViewDataSource.h */,
+				ED0A003615BEF6D700731E13 /* EmptyTableViewDataSource.m */,
+				ED0A003915BEF91E00731E13 /* EmptyTableViewDelegate.h */,
+				ED0A003A15BEF91E00731E13 /* EmptyTableViewDelegate.m */,
 			);
 			name = "UI Tests";
 			sourceTree = "<group>";
@@ -194,6 +215,8 @@
 				ED3A64C215B47D1A00E6EA04 /* AppDelegate.h */,
 				ED3A64C315B47D1A00E6EA04 /* AppDelegate.m */,
 				ED3A64C515B47D1A00E6EA04 /* MainStoryboard.storyboard */,
+				ED0A002A15BEEDAF00731E13 /* EditViewController.h */,
+				ED0A002B15BEEDAF00731E13 /* EditViewController.m */,
 				ED3A64EF15B47DF800E6EA04 /* Model */,
 				ED3A64BA15B47D1A00E6EA04 /* Supporting Files */,
 				EDAE633B15B5E25B008D4164 /* EditManager.h */,
@@ -403,6 +426,9 @@
 				ED039D6F15BDB7F80015D8D7 /* FavoritesManager.m in Sources */,
 				ED039D7715BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */,
 				ED75F6B415BDC3C200693890 /* FavoriteList.m in Sources */,
+				ED0A002C15BEEDAF00731E13 /* EditViewController.m in Sources */,
+				ED0A003715BEF6D700731E13 /* EmptyTableViewDataSource.m in Sources */,
+				ED0A003B15BEF91E00731E13 /* EmptyTableViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +453,10 @@
 				ED039D7815BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */,
 				ED75F6B515BDC3C200693890 /* FavoriteList.m in Sources */,
 				ED75F6BC15BDC4E100693890 /* FavoriteListTests.m in Sources */,
+				ED0A002D15BEEDAF00731E13 /* EditViewController.m in Sources */,
+				ED0A003015BEEF5500731E13 /* EditViewControllerTests.m in Sources */,
+				ED0A003815BEF6D700731E13 /* EmptyTableViewDataSource.m in Sources */,
+				ED0A003C15BEF91E00731E13 /* EmptyTableViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

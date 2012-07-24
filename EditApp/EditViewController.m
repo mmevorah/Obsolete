@@ -2,7 +2,7 @@
 //  EditViewController.m
 //  EditApp
 //
-//  Created by Mark Mevorah on 7/19/12.
+//  Created by Mark Mevorah on 7/24/12.
 //  Copyright (c) 2012 University of Michigan. All rights reserved.
 //
 
@@ -15,8 +15,8 @@
 @implementation EditViewController
 
 @synthesize tableView;
-@synthesize tableViewDelegate;
 @synthesize dataSource;
+@synthesize tableViewDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,10 +31,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    self.tableView.dataSource  = self.dataSource;
     self.tableView.delegate = self.tableViewDelegate;
-    self.tableView.dataSource = self.dataSource;
-    
 }
 
 - (void)viewDidUnload

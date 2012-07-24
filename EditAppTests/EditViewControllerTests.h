@@ -2,7 +2,7 @@
 //  EditViewControllerTests.h
 //  EditApp
 //
-//  Created by Mark Mevorah on 7/19/12.
+//  Created by Mark Mevorah on 7/24/12.
 //  Copyright (c) 2012 University of Michigan. All rights reserved.
 //
 

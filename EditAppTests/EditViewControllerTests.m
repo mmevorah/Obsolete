@@ -2,67 +2,67 @@
 //  EditViewControllerTests.m
 //  EditApp
 //
-//  Created by Mark Mevorah on 7/19/12.
+//  Created by Mark Mevorah on 7/24/12.
 //  Copyright (c) 2012 University of Michigan. All rights reserved.
 //
 
 #import "EditViewControllerTests.h"
 #import "EditViewController.h"
+#import <objc/runtime.h>                    // need this to check properties
+#import "EmptyTableViewDataSource.h"
 #import "EmptyTableViewDelegate.h"
-#import "ProductTableDataSource.h"
-#import <objc/runtime.h>
 
 @implementation EditViewControllerTests
 {
-    EditViewController *viewController;
+    EditViewController *editViewController;
     UITableView *tableView;
 }
 
 -(void)setUp
 {
-    viewController = [[EditViewController alloc] init];
-    tableView = [[UITableView alloc] init ];
-    viewController.tableView = tableView;
+    editViewController = [[EditViewController alloc] init];
+    tableView = [[UITableView alloc] init];
+    editViewController.tableView = tableView;
 }
 
 -(void)tearDown
 {
-    viewController = nil;
+    editViewController = nil;
     tableView = nil;
+}
+
+-(void)testViewControllerHasATableViewProperty
+{
+    objc_property_t tableViewProperty = class_getProperty([editViewController class], "tableView"); //for runtime checking
+    STAssertTrue(tableViewProperty != NULL, @"EditViewController needs a table property");
+}
+
+-(void)testViewControllerHasADataSourceProperty
+{
+    objc_property_t dataSourceProperty = class_getProperty([editViewController class], "dataSource");
+    STAssertTrue(dataSourceProperty != NULL, @"EditViewController needs a data source");
+}
+
+-(void)testViewControllerHasATableViewDelegateProperty
+{
+    objc_property_t delegateProperty = class_getProperty([editViewController class], "tableViewDelegate");
+    STAssertTrue(delegateProperty != NULL, @"EditViewController needs a table view delegate");
 }
 
 -(void)testViewControllerConnectsDataSourceInViewDidLoad
 {
-    id<UITableViewDataSource> dataSource = [[ProductTableDataSource alloc] init ];
-    viewController.dataSource = dataSource;
-    [viewController viewDidLoad];
-    STAssertEqualObjects([tableView dataSource], dataSource, @"View controller should have set the table view's data source");
+    id<UITableViewDataSource> dataSource = [[EmptyTableViewDataSource alloc] init];
+    editViewController.dataSource = dataSource;
+    [editViewController viewDidLoad];
+    STAssertEqualObjects([tableView dataSource], dataSource, @"EditViewController should have set the table view's data source");
 }
 
 -(void)testViewControllerConnectsDelegateInViewDidLoad
 {
     id<UITableViewDelegate> delegate = [[EmptyTableViewDelegate alloc] init];
-    viewController.tableViewDelegate = delegate;
-    [viewController viewDidLoad];
-    STAssertEqualObjects([tableView delegate], delegate, @"View controller should have set the table view's delegate");
-}
-
--(void)testViewControllerHasATableViewProperty
-{
-    objc_property_t tableViewProperty = class_getProperty([viewController class], "tableView");
-    STAssertTrue(tableViewProperty != NULL, @"EditViewController needs a table view");
-}
-
--(void)testViewControllerHasADataSourceProperty
-{
-    objc_property_t dataSourceProperty = class_getProperty([viewController class], "dataSource");
-    STAssertTrue(dataSourceProperty != NULL, @"View Controller needs a data source");
-}
-
--(void)testViewControllerHasATableViewDelegateProperty
-{
-    objc_property_t delegateProperty = class_getProperty([viewController class], "tableViewDelegate");
-    STAssertTrue(delegateProperty != NULL, @"View Controller needs a table view delegate");
+    editViewController.tableViewDelegate = delegate;
+    [editViewController viewDidLoad];
+    STAssertEqualObjects([tableView delegate], delegate, @"EditViewController should have set the table view's delegate");
 }
 
 
