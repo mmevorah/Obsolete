@@ -7,6 +7,8 @@
 //
 
 #import "EditViewController.h"
+#import "ProductTableDelegate.h"
+#import "ProductTableDataSource.h"
 
 @interface EditViewController ()
 
@@ -31,8 +33,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.tableView.dataSource  = self.dataSource;
+    self.tableViewDelegate.tableDataSource = self.dataSource;
     self.tableView.delegate = self.tableViewDelegate;
+    self.tableView.dataSource = self.dataSource;
 }
 
 - (void)viewDidUnload

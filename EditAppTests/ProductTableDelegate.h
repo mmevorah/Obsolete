@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface EmptyTableViewDelegate : NSObject <UITableViewDelegate>
+@class ProductTableDataSource;
+@interface ProductTableDelegate : NSObject <UITableViewDelegate>
+
+@property(strong) ProductTableDataSource *tableDataSource;
 
 @end

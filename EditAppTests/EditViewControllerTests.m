@@ -9,13 +9,15 @@
 #import "EditViewControllerTests.h"
 #import "EditViewController.h"
 #import <objc/runtime.h>                    // need this to check properties
-#import "EmptyTableViewDataSource.h"
-#import "EmptyTableViewDelegate.h"
+#import "ProductTableDataSource.h"
+#import "ProductTableDelegate.h"
 
 @implementation EditViewControllerTests
 {
     EditViewController *editViewController;
     UITableView *tableView;
+    ProductTableDataSource *dataSource;
+    ProductTableDelegate *delegate;
 }
 
 -(void)setUp
@@ -23,12 +25,17 @@
     editViewController = [[EditViewController alloc] init];
     tableView = [[UITableView alloc] init];
     editViewController.tableView = tableView;
+    dataSource = [[ProductTableDataSource alloc] init];
+    delegate = [[ProductTableDelegate alloc] init];
+    editViewController.dataSource = dataSource;
+    editViewController.tableViewDelegate = delegate;
 }
 
 -(void)tearDown
 {
     editViewController = nil;
     tableView = nil;
+    dataSource = nil;
 }
 
 -(void)testViewControllerHasATableViewProperty
@@ -51,19 +58,24 @@
 
 -(void)testViewControllerConnectsDataSourceInViewDidLoad
 {
-    id<UITableViewDataSource> dataSource = [[EmptyTableViewDataSource alloc] init];
-    editViewController.dataSource = dataSource;
     [editViewController viewDidLoad];
     STAssertEqualObjects([tableView dataSource], dataSource, @"EditViewController should have set the table view's data source");
 }
 
 -(void)testViewControllerConnectsDelegateInViewDidLoad
 {
-    id<UITableViewDelegate> delegate = [[EmptyTableViewDelegate alloc] init];
-    editViewController.tableViewDelegate = delegate;
     [editViewController viewDidLoad];
     STAssertEqualObjects([tableView delegate], delegate, @"EditViewController should have set the table view's delegate");
 }
+
+-(void)testViewControllerConnectsDataSourceToDelegate
+{
+    [editViewController viewDidLoad];
+    STAssertEqualObjects(delegate.tableDataSource, dataSource, @"The view controller should tell the table view delegate about its data source");
+}
+
+
+
 
 
 @end

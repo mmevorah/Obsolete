@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 University of Michigan. All rights reserved.
 //
 
-#import "EmptyTableViewDelegate.h"
+#import "ProductTableDelegate.h"
 
-@implementation EmptyTableViewDelegate
-
+@implementation ProductTableDelegate
+@synthesize tableDataSource;
 @end

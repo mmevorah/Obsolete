@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class ProductTableDelegate;
+@class ProductTableDataSource;
 @interface EditViewController : UIViewController
 
 @property(strong) UITableView *tableView;
-@property(strong) id<UITableViewDataSource> dataSource;
-@property(strong) id<UITableViewDelegate> tableViewDelegate;
+@property(strong) ProductTableDataSource *dataSource;
+@property(strong) ProductTableDelegate *tableViewDelegate;
 
 @end

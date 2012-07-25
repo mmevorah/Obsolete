@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Product.h"
+@interface ProductTableDataSource : NSObject <UITableViewDataSource>
+{
+    NSArray *products;
+}
 
-@interface ProductTableDataSource : NSObject
+-(void)setProducts:(NSArray *)newProducts;
+- (Product *)productForIndexPath:(NSIndexPath *)indexPath;
 
 @end
