@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Product.h"
-@interface ProductTableDataSource : NSObject <UITableViewDataSource>
+@class Product;
+@interface ProductTableDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *products;
 }
@@ -17,3 +17,5 @@
 - (Product *)productForIndexPath:(NSIndexPath *)indexPath;
 
 @end
+
+extern NSString *ProductTableDidSelectProductNotification;

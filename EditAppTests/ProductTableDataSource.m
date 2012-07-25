@@ -9,17 +9,15 @@
 #import "ProductTableDataSource.h"
 #import "Product.h"
 
+NSString *productCellReuseIdentifier = @"Topic";
 
 @implementation ProductTableDataSource
-
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSParameterAssert(section == 0);
     return [products count];
 }
-
-NSString *productCellReuseIdentifier = @"Topic";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -34,6 +32,12 @@ NSString *productCellReuseIdentifier = @"Topic";
     return productCell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSNotification *note = [NSNotification notificationWithName:ProductTableDidSelectProductNotification object:[self productForIndexPath: indexPath]];
+    [[NSNotificationCenter defaultCenter] postNotification:note];
+}
+
 -(void)setProducts:(NSArray *)newProducts
 {
     products = newProducts;
@@ -44,6 +48,6 @@ NSString *productCellReuseIdentifier = @"Topic";
     return [products objectAtIndex:[indexPath row]];
 }
 
-
-
 @end
+
+NSString *ProductTableDidSelectProductNotification = @"ProductTableDidSelectProductNotification";

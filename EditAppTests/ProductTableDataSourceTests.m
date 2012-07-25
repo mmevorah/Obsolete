@@ -31,9 +31,9 @@
     context = [[NSManagedObjectContext alloc] init ];
     [context setPersistentStoreCoordinator:coordinator];
     
-    dataSource = [[ProductTableDataSource alloc] init];
     factory = [[ProductFactory alloc] init];
     factory.context = context;
+    dataSource = [[ProductTableDataSource alloc] init];
     product = [factory createProductWithTheName:@"Shirt" theImage:nil];
     productList = [NSArray arrayWithObject:product];
     [dataSource setProducts:productList];
