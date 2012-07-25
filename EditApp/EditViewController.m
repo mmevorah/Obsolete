@@ -7,7 +7,6 @@
 //
 
 #import "EditViewController.h"
-#import "ProductTableDelegate.h"
 #import "ProductTableDataSource.h"
 
 @interface EditViewController ()
@@ -18,7 +17,6 @@
 
 @synthesize tableView;
 @synthesize dataSource;
-@synthesize tableViewDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,21 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    self.tableViewDelegate.tableDataSource = self.dataSource;
-    self.tableView.delegate = self.tableViewDelegate;
+    self.tableView.delegate = self.dataSource;
     self.tableView.dataSource = self.dataSource;
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return YES;
 }
 
 @end

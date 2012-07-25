@@ -16,8 +16,7 @@
 {
     EditViewController *editViewController;
     UITableView *tableView;
-    ProductTableDataSource *dataSource;
-    ProductTableDelegate *delegate;
+    id<UITableViewDelegate, UITableViewDataSource> dataSource;
 }
 
 -(void)setUp
@@ -26,9 +25,7 @@
     tableView = [[UITableView alloc] init];
     editViewController.tableView = tableView;
     dataSource = [[ProductTableDataSource alloc] init];
-    delegate = [[ProductTableDelegate alloc] init];
     editViewController.dataSource = dataSource;
-    editViewController.tableViewDelegate = delegate;
 }
 
 -(void)tearDown
@@ -50,12 +47,6 @@
     STAssertTrue(dataSourceProperty != NULL, @"EditViewController needs a data source");
 }
 
--(void)testViewControllerHasATableViewDelegateProperty
-{
-    objc_property_t delegateProperty = class_getProperty([editViewController class], "tableViewDelegate");
-    STAssertTrue(delegateProperty != NULL, @"EditViewController needs a table view delegate");
-}
-
 -(void)testViewControllerConnectsDataSourceInViewDidLoad
 {
     [editViewController viewDidLoad];
@@ -65,17 +56,7 @@
 -(void)testViewControllerConnectsDelegateInViewDidLoad
 {
     [editViewController viewDidLoad];
-    STAssertEqualObjects([tableView delegate], delegate, @"EditViewController should have set the table view's delegate");
+    STAssertEqualObjects([tableView delegate], dataSource, @"EditViewController should have set the table view's delegate");
 }
-
--(void)testViewControllerConnectsDataSourceToDelegate
-{
-    [editViewController viewDidLoad];
-    STAssertEqualObjects(delegate.tableDataSource, dataSource, @"The view controller should tell the table view delegate about its data source");
-}
-
-
-
-
 
 @end

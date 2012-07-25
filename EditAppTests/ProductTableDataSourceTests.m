@@ -99,14 +99,5 @@
     STAssertEqualObjects(@"Shirt", cellTitle, @"Cell's title should be equal to the topic's title");
 }
 
-
--(void)testDataSourceIndicatesWhichTopicIsRepresentedForAnIndexPath
-{
-    NSIndexPath *firstRow = [NSIndexPath indexPathForRow:0 inSection:0];
-    Product *firstProduct = [dataSource productForIndexPath: firstRow];
-    STAssertEqualObjects(firstProduct.name, @"Shirt", @"The first product at row 0 is the Shirt");
-}
-
-
 @end
 

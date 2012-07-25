@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "EditAppTests/EditViewControllerTests.m"
-         timestampString = "364846879.935084"
+         timestampString = "364927331.694389"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "121"
-         endingLineNumber = "121">
+         startingLineNumber = "102"
+         endingLineNumber = "102">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
