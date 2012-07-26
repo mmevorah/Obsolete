@@ -32,6 +32,8 @@
     [super viewDidLoad];
     self.tableView.delegate = self.dataSource;
     self.tableView.dataSource = self.dataSource;
+    
 }
+
 
 @end

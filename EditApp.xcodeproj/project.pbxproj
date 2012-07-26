@@ -19,8 +19,6 @@
 		ED0A002C15BEEDAF00731E13 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A002B15BEEDAF00731E13 /* EditViewController.m */; };
 		ED0A002D15BEEDAF00731E13 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A002B15BEEDAF00731E13 /* EditViewController.m */; };
 		ED0A003015BEEF5500731E13 /* EditViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A002F15BEEF5500731E13 /* EditViewControllerTests.m */; };
-		ED0A003B15BEF91E00731E13 /* ProductTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A003A15BEF91E00731E13 /* ProductTableDelegate.m */; };
-		ED0A003C15BEF91E00731E13 /* ProductTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A003A15BEF91E00731E13 /* ProductTableDelegate.m */; };
 		ED0A004315BF038F00731E13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A64C315B47D1A00E6EA04 /* AppDelegate.m */; };
 		ED3A64B215B47D1A00E6EA04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B115B47D1A00E6EA04 /* UIKit.framework */; };
 		ED3A64B415B47D1A00E6EA04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3A64B315B47D1A00E6EA04 /* Foundation.framework */; };
@@ -53,6 +51,7 @@
 		EDAE633E15B5E25B008D4164 /* EditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE633C15B5E25B008D4164 /* EditManager.m */; };
 		EDAE634115B5E35A008D4164 /* EditManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE634015B5E35A008D4164 /* EditManagerTests.m */; };
 		EDAE634415B5E36E008D4164 /* VariationFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAE634315B5E36E008D4164 /* VariationFactoryTests.m */; };
+		EDED9B1C15C1ACB100E2B47D /* SearchBarDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDED9B1B15C1ACB100E2B47D /* SearchBarDelegateTests.m */; };
 		EDF8D10D15B4918E00765DA9 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8D10C15B4918E00765DA9 /* CoreDataTests.m */; };
 		EDF8D11915B4A73D00765DA9 /* ProductFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8D11815B4A73D00765DA9 /* ProductFactoryTests.m */; };
 		EDF8D12015B4AD8200765DA9 /* ProductFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8D11F15B4AD8200765DA9 /* ProductFactory.m */; };
@@ -84,8 +83,6 @@
 		ED0A002B15BEEDAF00731E13 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		ED0A002E15BEEF5500731E13 /* EditViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewControllerTests.h; sourceTree = "<group>"; };
 		ED0A002F15BEEF5500731E13 /* EditViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewControllerTests.m; sourceTree = "<group>"; };
-		ED0A003915BEF91E00731E13 /* ProductTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductTableDelegate.h; path = EditAppTests/ProductTableDelegate.h; sourceTree = SOURCE_ROOT; };
-		ED0A003A15BEF91E00731E13 /* ProductTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductTableDelegate.m; path = EditAppTests/ProductTableDelegate.m; sourceTree = SOURCE_ROOT; };
 		ED3A64AD15B47D1A00E6EA04 /* EditApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3A64B115B47D1A00E6EA04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ED3A64B315B47D1A00E6EA04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,8 +110,8 @@
 		ED75F6B315BDC3C200693890 /* FavoriteList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteList.m; sourceTree = "<group>"; };
 		ED75F6BA15BDC4E100693890 /* FavoriteListTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteListTests.h; sourceTree = "<group>"; };
 		ED75F6BB15BDC4E100693890 /* FavoriteListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteListTests.m; sourceTree = "<group>"; };
-		ED76E4F815C0313D00AC992F /* ProductTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableDataSource.h; sourceTree = "<group>"; };
-		ED76E4F915C0313D00AC992F /* ProductTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableDataSource.m; sourceTree = "<group>"; };
+		ED76E4F815C0313D00AC992F /* ProductTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductTableDataSource.h; path = EditAppTests/ProductTableDataSource.h; sourceTree = SOURCE_ROOT; };
+		ED76E4F915C0313D00AC992F /* ProductTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductTableDataSource.m; path = EditAppTests/ProductTableDataSource.m; sourceTree = SOURCE_ROOT; };
 		ED76E4FD15C0316000AC992F /* ProductTableDataSourceTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableDataSourceTests.h; sourceTree = "<group>"; };
 		ED76E4FE15C0316000AC992F /* ProductTableDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableDataSourceTests.m; sourceTree = "<group>"; };
 		EDA6216615BF2FC60083FE89 /* ProductTableDelegateTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableDelegateTests.h; sourceTree = "<group>"; };
@@ -127,6 +124,8 @@
 		EDAE634015B5E35A008D4164 /* EditManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditManagerTests.m; sourceTree = "<group>"; };
 		EDAE634215B5E36E008D4164 /* VariationFactoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariationFactoryTests.h; sourceTree = "<group>"; };
 		EDAE634315B5E36E008D4164 /* VariationFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariationFactoryTests.m; sourceTree = "<group>"; };
+		EDED9B1A15C1ACB000E2B47D /* SearchBarDelegateTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBarDelegateTests.h; sourceTree = "<group>"; };
+		EDED9B1B15C1ACB100E2B47D /* SearchBarDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBarDelegateTests.m; sourceTree = "<group>"; };
 		EDF8D10B15B4918E00765DA9 /* CoreDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTests.h; sourceTree = "<group>"; };
 		EDF8D10C15B4918E00765DA9 /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
 		EDF8D11715B4A73D00765DA9 /* ProductFactoryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductFactoryTests.h; sourceTree = "<group>"; };
@@ -170,10 +169,8 @@
 				EDA6216715BF2FC60083FE89 /* ProductTableDelegateTests.m */,
 				ED76E4FD15C0316000AC992F /* ProductTableDataSourceTests.h */,
 				ED76E4FE15C0316000AC992F /* ProductTableDataSourceTests.m */,
-				ED76E4F815C0313D00AC992F /* ProductTableDataSource.h */,
-				ED76E4F915C0313D00AC992F /* ProductTableDataSource.m */,
-				ED0A003915BEF91E00731E13 /* ProductTableDelegate.h */,
-				ED0A003A15BEF91E00731E13 /* ProductTableDelegate.m */,
+				EDED9B1A15C1ACB000E2B47D /* SearchBarDelegateTests.h */,
+				EDED9B1B15C1ACB100E2B47D /* SearchBarDelegateTests.m */,
 			);
 			name = "UI Tests";
 			sourceTree = "<group>";
@@ -228,6 +225,8 @@
 				ED3A64C515B47D1A00E6EA04 /* MainStoryboard.storyboard */,
 				ED0A002A15BEEDAF00731E13 /* EditViewController.h */,
 				ED0A002B15BEEDAF00731E13 /* EditViewController.m */,
+				ED76E4F815C0313D00AC992F /* ProductTableDataSource.h */,
+				ED76E4F915C0313D00AC992F /* ProductTableDataSource.m */,
 				ED3A64EF15B47DF800E6EA04 /* Model */,
 				ED3A64BA15B47D1A00E6EA04 /* Supporting Files */,
 				EDAE633B15B5E25B008D4164 /* EditManager.h */,
@@ -302,12 +301,12 @@
 			isa = PBXGroup;
 			children = (
 				ED10835215B9B4FF00B9E612 /* Mocks */,
+				EDAE633F15B5E35A008D4164 /* EditManagerTests.h */,
+				EDAE634015B5E35A008D4164 /* EditManagerTests.m */,
 				EDF8D11715B4A73D00765DA9 /* ProductFactoryTests.h */,
 				EDF8D11815B4A73D00765DA9 /* ProductFactoryTests.m */,
 				EDAE634215B5E36E008D4164 /* VariationFactoryTests.h */,
 				EDAE634315B5E36E008D4164 /* VariationFactoryTests.m */,
-				EDAE633F15B5E35A008D4164 /* EditManagerTests.h */,
-				EDAE634015B5E35A008D4164 /* EditManagerTests.m */,
 				ED700A3E15B6066500973B64 /* IDManagerTests.h */,
 				ED700A3F15B6066500973B64 /* IDManagerTests.m */,
 				ED039D6715BDB5AE0015D8D7 /* FavoritesManagerTests.h */,
@@ -438,7 +437,6 @@
 				ED039D7715BDBACD0015D8D7 /* MockFavoritesManager.m in Sources */,
 				ED75F6B415BDC3C200693890 /* FavoriteList.m in Sources */,
 				ED0A002C15BEEDAF00731E13 /* EditViewController.m in Sources */,
-				ED0A003B15BEF91E00731E13 /* ProductTableDelegate.m in Sources */,
 				ED76E4FA15C0313D00AC992F /* ProductTableDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,10 +465,10 @@
 				ED75F6BC15BDC4E100693890 /* FavoriteListTests.m in Sources */,
 				ED0A002D15BEEDAF00731E13 /* EditViewController.m in Sources */,
 				ED0A003015BEEF5500731E13 /* EditViewControllerTests.m in Sources */,
-				ED0A003C15BEF91E00731E13 /* ProductTableDelegate.m in Sources */,
 				EDA6216815BF2FC60083FE89 /* ProductTableDelegateTests.m in Sources */,
 				ED76E4FB15C0313D00AC992F /* ProductTableDataSource.m in Sources */,
 				ED76E4FF15C0316000AC992F /* ProductTableDataSourceTests.m in Sources */,
+				EDED9B1C15C1ACB100E2B47D /* SearchBarDelegateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

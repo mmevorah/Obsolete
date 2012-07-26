@@ -111,11 +111,13 @@
 -(void)addProductToFavoritesWithID:(NSNumber *)productID toFavoritesList:(int)favList atPosition :(NSNumber *)pos
 {
     [favoriteManager insertProductWithID:productID intoFavoritesList:favList atPosition: [pos intValue]];
+    [favoriteManager saveFavorites];
 }
 
 -(void)removeProductFromFavoritesList:(int)favList position:(NSNumber *)pos
 {
     [favoriteManager removeProductFromList:favList atPostion: [pos intValue]];
+    [favoriteManager saveFavorites];
 }
 
 
@@ -131,6 +133,19 @@
     [context rollback];
     [idManager cancelIDS];
 }
+
+-(NSArray*)getProductList
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    NSEntityDescription *productEntity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:context];
+    [request setEntity:productEntity];
+    NSError *error;
+    NSArray *adiPure = [context executeFetchRequest:request error:&error];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    return [adiPure sortedArrayUsingDescriptors:[NSArray arrayWithObjects:sortDescriptor, nil]];
+}
+
 
 
 @end

@@ -38,8 +38,11 @@
 -(void)changeVariation:(Variation *)variation priceTo:(NSNumber *)price;
 
 -(void)saveContext;
+-(NSArray*)getProductList;
 
 -(void)addProductToFavoritesWithID:(NSNumber*)productID toFavoritesList:(int)favList atPosition:(NSNumber*)pos;
 -(void)removeProductFromFavoritesList:(int)favList position:(NSNumber*)pos;
+
+
 
 @end

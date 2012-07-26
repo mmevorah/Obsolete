@@ -10,7 +10,6 @@
 #import "EditViewController.h"
 #import <objc/runtime.h>                    // need this to check properties
 #import "ProductTableDataSource.h"
-#import "ProductTableDelegate.h"
 
 @implementation EditViewControllerTests
 {

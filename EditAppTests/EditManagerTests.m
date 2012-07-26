@@ -40,14 +40,14 @@
 
 -(void)tearDown
 {
-    editManager = nil;
-    mockFavoritesManager = nil;
-    context = nil;
-    NSError *error = nil;
-    STAssertTrue([coordinator removePersistentStore:store error:&error],@"couldn't remove persistent store: %@", error);
-    store = nil;
-    coordinator = nil;
     model = nil;
+    coordinator = nil;
+    store = nil;
+    context = nil;
+    idManager = nil;
+    mockFavoritesManager = nil;
+    editManager = nil;
+    product = nil;
 }
 
 -(void)testEditManagerCreated
@@ -177,5 +177,22 @@
     [editManager removeProductFromFavoritesList:0 position: [NSNumber numberWithInt: 23]];
     STAssertEquals([[editManager.favoriteManager.favList0.list objectAtIndex:23] intValue], -1, @"Edit manager should be able to remove products from favorites");
 }
+
+-(void)testCanReturnArrayOfProducts
+{
+    [editManager createProductWithAName:@"Pants" anImage:nil andAPrice:[NSNumber numberWithDouble: 4.5]];
+    STAssertTrue([[editManager getProductList] count] == 2, @"edit manager should be able to return a list of products in the current context");
+}
+
+-(void)testReturnedArrayIsSortedByName
+{
+    [editManager createProductWithAName:@"Apple" anImage:nil andAPrice:[NSNumber numberWithDouble:3.50]];
+    [editManager createProductWithAName:@"Zebra" anImage:nil andAPrice:[NSNumber numberWithDouble:4.60]];
+    NSLog(@"list looks like: %@", [editManager getProductList]);
+    STAssertTrue([[[[editManager getProductList] objectAtIndex:0] name] isEqualToString:@"Apple"], @"Apple should be first");
+    STAssertTrue([[[[editManager getProductList] objectAtIndex:1] name] isEqualToString:@"Shirt"], @"Shirt should be second");
+    STAssertTrue([[[[editManager getProductList] objectAtIndex:2] name] isEqualToString:@"Zebra"], @"Zebra should be third");
+}
+
 
 @end

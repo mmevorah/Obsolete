@@ -7,7 +7,6 @@
 //
 
 #import "ProductTableDelegateTests.h"
-#import "ProductTableDelegate.h"
 #import "ProductTableDataSource.h"
 #import "Product.h"
 #import "ProductFactory.h"
