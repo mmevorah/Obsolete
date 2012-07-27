@@ -13,7 +13,9 @@
 @property(strong) UITableView *tableView;
 @property(strong) id<UITableViewDataSource, UITableViewDelegate> dataSource;
 
+@property(strong) UISearchBar *searchBar;
+@property(strong) id<UISearchBarDelegate> searchBarDelegate;
 
-
+-(void)userDidSelectProductNotification: (NSNotification *)note;
 
 @end

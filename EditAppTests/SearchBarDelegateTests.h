@@ -8,6 +8,24 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface SearchBarDelegateTests : SenTestCase
+@class ProductFactory;
+@class Product;
 
+@interface SearchBarDelegateTests : SenTestCase
+{
+    NSPersistentStoreCoordinator *coordinator;
+    NSManagedObjectModel *model;
+    NSManagedObjectContext *context;
+    NSPersistentStore *store;
+    
+    ProductFactory *factory;
+    Product *product1;
+    Product *product2;
+    Product *product3;
+    Product *product4;
+    Product *product5;
+    
+    NSArray *productArray;
+    
+}
 @end
