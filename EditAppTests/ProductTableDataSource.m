@@ -7,6 +7,7 @@
 //
 
 #import "ProductTableDataSource.h"
+<<<<<<< HEAD
 #import "Product.h"
 
 NSString *productCellReuseIdentifier = @"Topic";
@@ -48,6 +49,11 @@ NSString *productCellReuseIdentifier = @"Topic";
     return [products objectAtIndex:[indexPath row]];
 }
 
+=======
+
+@implementation ProductTableDataSource
+
+>>>>>>> parent of 0b985c6... Working State
 @end
 
 NSString *ProductTableDidSelectProductNotification = @"ProductTableDidSelectProductNotification";

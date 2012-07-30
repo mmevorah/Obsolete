@@ -7,15 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+<<<<<<< HEAD
 @class Product;
 @interface ProductTableDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *products;
 }
+=======
+>>>>>>> parent of 0b985c6... Working State
 
--(void)setProducts:(NSArray *)newProducts;
-- (Product *)productForIndexPath:(NSIndexPath *)indexPath;
+@interface ProductTableDataSource : NSObject
 
 @end
+<<<<<<< HEAD
 
 extern NSString *ProductTableDidSelectProductNotification;
+=======
+>>>>>>> parent of 0b985c6... Working State

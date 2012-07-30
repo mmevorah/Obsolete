@@ -7,7 +7,10 @@
 //
 
 #import "EditViewController.h"
+<<<<<<< HEAD
 #import "ProductTableDataSource.h"
+=======
+>>>>>>> parent of 0b985c6... Working State
 
 @interface EditViewController ()
 
@@ -32,9 +35,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+<<<<<<< HEAD
     self.tableView.delegate = self.dataSource;
     self.tableView.dataSource = self.dataSource;
     self.searchBar.delegate = self.searchBarDelegate;
+=======
+	// Do any additional setup after loading the view.
+    self.tableView.dataSource  = self.dataSource;
+    self.tableView.delegate = self.tableViewDelegate;
+>>>>>>> parent of 0b985c6... Working State
 }
 
 -(void)viewDidAppear:(BOOL)animated

@@ -7,6 +7,7 @@
 //
 
 #import "ProductTableDataSourceTests.h"
+<<<<<<< HEAD
 #import "Product.h"
 #import "ProductFactory.h"
 #import "ProductTableDataSource.h"
@@ -98,6 +99,9 @@
     NSString *cellTitle = firstCell.textLabel.text;
     STAssertEqualObjects(@"Shirt", cellTitle, @"Cell's title should be equal to the topic's title");
 }
+=======
+
+@implementation ProductTableDataSourceTests
+>>>>>>> parent of 0b985c6... Working State
 
 @end
-

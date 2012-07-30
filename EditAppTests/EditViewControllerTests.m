@@ -9,6 +9,7 @@
 #import "EditViewControllerTests.h"
 #import "EditViewController.h"
 #import <objc/runtime.h>                    // need this to check properties
+<<<<<<< HEAD
 #import "ProductTableDataSource.h"
 #import "SearchBarDelegate.h"
 
@@ -40,6 +41,10 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
 }
 
 @end
+=======
+#import "EmptyTableViewDataSource.h"
+#import "EmptyTableViewDelegate.h"
+>>>>>>> parent of 0b985c6... Working State
 
 @implementation EditViewControllerTests
 {
@@ -47,6 +52,7 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
     UINavigationController *navController;
     
     UITableView *tableView;
+<<<<<<< HEAD
     id<UITableViewDelegate, UITableViewDataSource> dataSource;
     UISearchBar *searchBar;
     id<UISearchBarDelegate> searchBarDelegate;
@@ -61,6 +67,8 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
     Method method1 = class_getInstanceMethod(cls, sel1);
     Method method2 = class_getInstanceMethod(cls, sel2);
     method_exchangeImplementations(method1, method2);
+=======
+>>>>>>> parent of 0b985c6... Working State
 }
 
 -(void)setUp
@@ -70,6 +78,7 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
     
     tableView = [[UITableView alloc] init];
     editViewController.tableView = tableView;
+<<<<<<< HEAD
     dataSource = [[ProductTableDataSource alloc] init];
     editViewController.dataSource = dataSource;
     
@@ -92,6 +101,8 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
     
     realUserDidSelectProduct = @selector(userDidSelectProductNotification:);
     testUserDidSelectProduct = @selector(editControllerTests_userDidSelectProductNotification:);
+=======
+>>>>>>> parent of 0b985c6... Working State
 }
 
 -(void)tearDown
@@ -101,6 +112,7 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
     editViewController = nil;
     navController = nil;
     tableView = nil;
+<<<<<<< HEAD
     dataSource = nil;
     
     [EditViewControllerTests swapInstanceMethodsForClass:[UIViewController class]
@@ -110,6 +122,8 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
                                                 selector:realViewWillDisappear
                                              andSelector:testViewWillDisappear];
     
+=======
+>>>>>>> parent of 0b985c6... Working State
 }
 
 -(void)testViewControllerHasATableViewProperty
@@ -126,12 +140,16 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
 
 -(void)testViewControllerConnectsDataSourceInViewDidLoad
 {
+    id<UITableViewDataSource> dataSource = [[EmptyTableViewDataSource alloc] init];
+    editViewController.dataSource = dataSource;
     [editViewController viewDidLoad];
     STAssertEqualObjects([tableView dataSource], dataSource, @"EditViewController should have set the table view's data source");
 }
 
 -(void)testViewControllerConnectsTableDelegateInViewDidLoad
 {
+    id<UITableViewDelegate> delegate = [[EmptyTableViewDelegate alloc] init];
+    editViewController.tableViewDelegate = delegate;
     [editViewController viewDidLoad];
     STAssertEqualObjects([tableView delegate], dataSource, @"EditViewController should have set the table view's delegate");
 }
@@ -142,6 +160,7 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
     STAssertTrue(searchBarProperty != NULL, @"EditViewController needs a search bar property");
 }
 
+<<<<<<< HEAD
 -(void)testViewControllerHasASearchBarDelegate
 {
     objc_property_t searchBarDelegateProperty = class_getProperty([editViewController class], "searchBarDelegate");
@@ -215,5 +234,7 @@ static const char *viewWillDisappearKey = "EditViewControllerTestsViewWillDisapp
     STAssertFalse([currentTopVc isEqual:editViewController], @"New view controller should be pushed onto the stack");
     STAssertTrue([currentTopVc isKindOfClass:[EditViewController class]], @"New view controller should be a EditViewController");
 }
+=======
+>>>>>>> parent of 0b985c6... Working State
 
 @end

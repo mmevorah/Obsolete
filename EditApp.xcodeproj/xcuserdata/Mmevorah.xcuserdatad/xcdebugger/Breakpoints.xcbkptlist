@@ -8,11 +8,19 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "EditAppTests/EditViewControllerTests.m"
+<<<<<<< HEAD
          timestampString = "365097336.43931"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "258"
          endingLineNumber = "258">
+=======
+         timestampString = "364837254.802054"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "109"
+         endingLineNumber = "109">
+>>>>>>> parent of 0b985c6... Working State
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

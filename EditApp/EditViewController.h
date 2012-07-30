@@ -11,11 +11,16 @@
 @interface EditViewController : UIViewController
 
 @property(strong) UITableView *tableView;
+<<<<<<< HEAD
 @property(strong) id<UITableViewDataSource, UITableViewDelegate> dataSource;
 
 @property(strong) UISearchBar *searchBar;
 @property(strong) id<UISearchBarDelegate> searchBarDelegate;
 
 -(void)userDidSelectProductNotification: (NSNotification *)note;
+=======
+@property(strong) id<UITableViewDataSource> dataSource;
+@property(strong) id<UITableViewDelegate> tableViewDelegate;
+>>>>>>> parent of 0b985c6... Working State
 
 @end
